@@ -29,20 +29,57 @@ namespace DWParentalControls
         /// </summary>
         private void InitializeComponent()
         {
+            this.msMainMenu = new System.Windows.Forms.MenuStrip();
+            this.系統SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.說明HToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msMainMenu.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // msMainMenu
+            // 
+            this.msMainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.系統SToolStripMenuItem,
+            this.說明HToolStripMenuItem});
+            this.msMainMenu.Location = new System.Drawing.Point(0, 0);
+            this.msMainMenu.Name = "msMainMenu";
+            this.msMainMenu.Size = new System.Drawing.Size(800, 24);
+            this.msMainMenu.TabIndex = 0;
+            this.msMainMenu.Text = "menuStrip1";
+            // 
+            // 系統SToolStripMenuItem
+            // 
+            this.系統SToolStripMenuItem.Name = "系統SToolStripMenuItem";
+            this.系統SToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.系統SToolStripMenuItem.Text = "系統(&S)";
+            // 
+            // 說明HToolStripMenuItem
+            // 
+            this.說明HToolStripMenuItem.Name = "說明HToolStripMenuItem";
+            this.說明HToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.說明HToolStripMenuItem.Text = "說明(&H)";
             // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.msMainMenu);
+            this.MainMenuStrip = this.msMainMenu;
             this.Name = "fMain";
             this.Text = "DW簡易家長監護";
+            this.Load += new System.EventHandler(this.fMain_Load);
+            this.msMainMenu.ResumeLayout(false);
+            this.msMainMenu.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.MenuStrip msMainMenu;
+        private System.Windows.Forms.ToolStripMenuItem 系統SToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 說明HToolStripMenuItem;
     }
 }
 
