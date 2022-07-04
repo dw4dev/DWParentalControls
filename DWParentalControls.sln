@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DWParentalControls", "DWParentalControls\DWParentalControls.csproj", "{7D9F691C-4F65-4D85-BE9F-1AF55E300E85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D9F691C-4F65-4D85-BE9F-1AF55E300E85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D9F691C-4F65-4D85-BE9F-1AF55E300E85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D9F691C-4F65-4D85-BE9F-1AF55E300E85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D9F691C-4F65-4D85-BE9F-1AF55E300E85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5ECAB9DD-1C9F-4124-A5CC-C706777AA49B}
+	EndGlobalSection
+EndGlobal
