@@ -32,6 +32,7 @@ namespace DWParentalControls
             this.msMainMenu = new System.Windows.Forms.MenuStrip();
             this.系統SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.說明HToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pnlMain = new System.Windows.Forms.Panel();
             this.msMainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,9 +41,9 @@ namespace DWParentalControls
             this.msMainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.系統SToolStripMenuItem,
             this.說明HToolStripMenuItem});
-            this.msMainMenu.Location = new System.Drawing.Point(0, 0);
+            this.msMainMenu.Location = new System.Drawing.Point(5, 5);
             this.msMainMenu.Name = "msMainMenu";
-            this.msMainMenu.Size = new System.Drawing.Size(800, 24);
+            this.msMainMenu.Size = new System.Drawing.Size(790, 24);
             this.msMainMenu.TabIndex = 0;
             this.msMainMenu.Text = "menuStrip1";
             // 
@@ -58,14 +59,24 @@ namespace DWParentalControls
             this.說明HToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.說明HToolStripMenuItem.Text = "說明(&H)";
             // 
+            // pnlMain
+            // 
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Location = new System.Drawing.Point(5, 29);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(790, 416);
+            this.pnlMain.TabIndex = 1;
+            // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.msMainMenu);
             this.MainMenuStrip = this.msMainMenu;
             this.Name = "fMain";
+            this.Padding = new System.Windows.Forms.Padding(5);
             this.Text = "DW簡易家長監護";
             this.Load += new System.EventHandler(this.fMain_Load);
             this.msMainMenu.ResumeLayout(false);
@@ -80,6 +91,7 @@ namespace DWParentalControls
         private System.Windows.Forms.MenuStrip msMainMenu;
         private System.Windows.Forms.ToolStripMenuItem 系統SToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 說明HToolStripMenuItem;
+        private System.Windows.Forms.Panel pnlMain;
     }
 }
 

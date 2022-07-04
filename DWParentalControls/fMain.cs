@@ -20,13 +20,20 @@ namespace DWParentalControls
             // register the event that is fired after the key press.
             hook.KeyPressed +=
                 new EventHandler<KeyPressedEventArgs>(hook_KeyPressed);
-            // register the control + alt + F12 combination as hot key.
-            hook.RegisterHotKey(DWParentalControls.ModifierKeys.Control | DWParentalControls.ModifierKeys.Alt,
+            // register the CONTROL + SHIFT + F12 combination as hot key.
+            hook.RegisterHotKey(DWParentalControls.ModifierKeys.Control | DWParentalControls.ModifierKeys.Shift,
                 Keys.F12);
         }
         void hook_KeyPressed(object sender, KeyPressedEventArgs e)
         {
-            
+            using(var f = new fLogin())
+            {
+                f.st
+                if(f.ShowDialog(this) == DialogResult.OK)
+                {
+                    
+                }
+            }
         }
 
         private void fMain_Load(object sender, EventArgs e)
