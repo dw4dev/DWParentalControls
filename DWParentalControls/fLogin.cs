@@ -25,7 +25,7 @@ namespace DWParentalControls
         {
             if (Modal)
             {
-                EncPWD = SecurityHelper.Text.EncryptToString(txtPWD.Text);
+                EncPWD = SecurityHelp.Text.EncryptToString(txtPWD.Text);
 
                 DialogResult = DialogResult.OK;
             }

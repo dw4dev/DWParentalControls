@@ -8,10 +8,10 @@ using DWParentalControls.Security;
 
 namespace DWParentalControls.Helpers
 {
-    public static class SecurityHelper
+    public static class SecurityHelp
     {
         static TextCryptography _Text;
-        static SecurityHelper()
+        static SecurityHelp()
         {
             _Text = new TextCryptography();
         }

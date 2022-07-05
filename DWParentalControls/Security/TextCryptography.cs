@@ -41,13 +41,13 @@ namespace DWParentalControls.Security
         /// <returns></returns>
         public string DecryptFromString(string encstr)
         {
-            byte[] enc = ConvertHelper.HexStringToBytes(encstr);
+            byte[] enc = ConvertHelp.HexStringToBytes(encstr);
             return Decrypt(enc);
         }
 
         public byte[] Encrypt(object str)
         {
-            byte[] plaintext = ConvertHelper.GetBytes(str.ToString());
+            byte[] plaintext = ConvertHelp.GetBytes(str.ToString());
             byte[] encrypt;
 
             using (MemoryStream ms = new MemoryStream())
@@ -69,7 +69,7 @@ namespace DWParentalControls.Security
         public string EncryptToString(object str)
         {
             byte[] enc = Encrypt(str.ToString());
-            return ConvertHelper.BytesToHexString(enc);
+            return ConvertHelp.BytesToHexString(enc);
         }
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace DWParentalControls.Security
         public string EncryptToBase64String(string str)
         {
             byte[] enc = Encrypt(str);
-            return ConvertHelper.BytesToBase64(enc);
+            return ConvertHelp.BytesToBase64(enc);
         }
 
         /// <summary>
@@ -90,7 +90,7 @@ namespace DWParentalControls.Security
         /// <returns></returns>
         public string DecryptFromBase64String(string encstr)
         {
-            byte[] enc = ConvertHelper.Base64ToBytes(encstr);
+            byte[] enc = ConvertHelp.Base64ToBytes(encstr);
             return Decrypt(enc);
         }
     }

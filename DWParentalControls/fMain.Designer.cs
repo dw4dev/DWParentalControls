@@ -30,34 +30,37 @@ namespace DWParentalControls
         private void InitializeComponent()
         {
             this.msMainMenu = new System.Windows.Forms.MenuStrip();
-            this.系統SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.說明HToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSystem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.tsmiSetMngCode = new System.Windows.Forms.ToolStripMenuItem();
             this.msMainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // msMainMenu
             // 
             this.msMainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.系統SToolStripMenuItem,
-            this.說明HToolStripMenuItem});
+            this.tsmiSystem,
+            this.tsmiHelp});
             this.msMainMenu.Location = new System.Drawing.Point(5, 5);
             this.msMainMenu.Name = "msMainMenu";
             this.msMainMenu.Size = new System.Drawing.Size(790, 24);
             this.msMainMenu.TabIndex = 0;
             this.msMainMenu.Text = "menuStrip1";
             // 
-            // 系統SToolStripMenuItem
+            // tsmiSystem
             // 
-            this.系統SToolStripMenuItem.Name = "系統SToolStripMenuItem";
-            this.系統SToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.系統SToolStripMenuItem.Text = "系統(&S)";
+            this.tsmiSystem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiSetMngCode});
+            this.tsmiSystem.Name = "tsmiSystem";
+            this.tsmiSystem.Size = new System.Drawing.Size(58, 20);
+            this.tsmiSystem.Text = "系統(&S)";
             // 
-            // 說明HToolStripMenuItem
+            // tsmiHelp
             // 
-            this.說明HToolStripMenuItem.Name = "說明HToolStripMenuItem";
-            this.說明HToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.說明HToolStripMenuItem.Text = "說明(&H)";
+            this.tsmiHelp.Name = "tsmiHelp";
+            this.tsmiHelp.Size = new System.Drawing.Size(60, 20);
+            this.tsmiHelp.Text = "說明(&H)";
             // 
             // pnlMain
             // 
@@ -66,6 +69,13 @@ namespace DWParentalControls
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(790, 416);
             this.pnlMain.TabIndex = 1;
+            // 
+            // tsmiSetMngCode
+            // 
+            this.tsmiSetMngCode.Name = "tsmiSetMngCode";
+            this.tsmiSetMngCode.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSetMngCode.Text = "設定管理者密碼";
+            this.tsmiSetMngCode.Click += new System.EventHandler(this.tsmiSetMngCode_Click);
             // 
             // fMain
             // 
@@ -78,6 +88,8 @@ namespace DWParentalControls
             this.Name = "fMain";
             this.Padding = new System.Windows.Forms.Padding(5);
             this.Text = "DW簡易家長監護";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fMain_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fMain_FormClosed);
             this.Load += new System.EventHandler(this.fMain_Load);
             this.msMainMenu.ResumeLayout(false);
             this.msMainMenu.PerformLayout();
@@ -89,9 +101,10 @@ namespace DWParentalControls
         #endregion
 
         private System.Windows.Forms.MenuStrip msMainMenu;
-        private System.Windows.Forms.ToolStripMenuItem 系統SToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 說明HToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSystem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiHelp;
         private System.Windows.Forms.Panel pnlMain;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSetMngCode;
     }
 }
 

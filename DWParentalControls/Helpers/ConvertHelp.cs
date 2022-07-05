@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DWParentalControls.Helpers
 {
-    public static class ConvertHelper
+    public static class ConvertHelp
     {
         /// <summary>
         /// 將 Hex 字串轉換回 byte[]
